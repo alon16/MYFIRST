@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textColor="@color/micolor"
+        android:onClick="onClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#673AB7">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textWebPassword"
+            />
+
+        <ImageButton
+            android:id="@+id/ib"
+            android:layout_width="55dp"
+            android:layout_height="85dp"
+            android:src="@android:drawable/ic_dialog_alert"
+            android:onClick="onClick"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_nosequees"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
