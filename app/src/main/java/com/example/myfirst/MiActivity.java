@@ -22,16 +22,16 @@ public class MiActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(MiActivity.this, "Boton", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MiActivity.this, "Boton", Toast.LENGTH_SHORT).show();
                 CheckBox ch= findViewById(R.id.checkBox);
                 EditText et= findViewById(R.id.editText);
                 Spinner sp=findViewById(R.id.spinner);
                 TextView txt= findViewById(R.id.textView);
-                //if(ch.isChecked()){
-                   // Toast.makeText(MiActivity.this, "Chekeado", Toast.LENGTH_SHORT).show();
-                //}
-               // else
-                    //Toast.makeText(MiActivity.this, "NO chekeado", Toast.LENGTH_SHORT).show();
+                if(ch.isChecked()){
+                    Toast.makeText(MiActivity.this, "Chekeado", Toast.LENGTH_SHORT).show();
+            }
+                else
+                    Toast.makeText(MiActivity.this, "NO chekeado", Toast.LENGTH_SHORT).show();
                 String cadena = (String) sp.getSelectedItem();
 
                 if(cadena.equals(et.getText().toString())){
